@@ -1,2 +1,2 @@
-# natours
-Landing page for an outdoor adventure tours company
+# FitPlan
+Landing page for a personalized fitness program building company
