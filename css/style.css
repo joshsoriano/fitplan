@@ -1,3 +1,28 @@
+/* Animations */
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0%); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0%); } }
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0%); } }
+
 *,
 *::after,
 *::before {
@@ -14,6 +39,30 @@ body {
   font-size: 1.6rem;
   line-height: 1.7;
   color: #212121; }
+
+.btn:link, .btn:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1.5rem 4.0rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all .2s; }
+
+.btn:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(33, 33, 33, 0.1); }
+
+.btn:active {
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.5rem 1rem rgba(33, 33, 33, 0.1); }
+
+.btn--white {
+  background-color: #ffffff;
+  color: #d38900;
+  font-weight: 500; }
+
+.btn--animated {
+  animation: moveInBottom 1.4s ease-in-out; }
 
 .header {
   height: 100vh;
@@ -51,52 +100,3 @@ body {
     font-weight: 400;
     letter-spacing: 1.2rem;
     animation: moveInRight 1.4s ease-in-out; }
-
-/* Animations */
-@keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-10rem); }
-  100% {
-    opacity: 1;
-    transform: translate(0%); } }
-
-@keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(10rem); }
-  100% {
-    opacity: 1;
-    transform: translate(0%); } }
-
-@keyframes moveInBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(10rem); }
-  100% {
-    opacity: 1;
-    transform: translate(0%); } }
-
-.btn:link, .btn:visited {
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 1.5rem 4.0rem;
-  display: inline-block;
-  border-radius: 10rem;
-  transition: all .2s; }
-
-.btn:hover {
-  transform: translateY(-0.3rem);
-  box-shadow: 0 1rem 2rem rgba(33, 33, 33, 0.1); }
-
-.btn:active {
-  transform: translateY(-0.1rem);
-  box-shadow: 0 0.5rem 1rem rgba(33, 33, 33, 0.1); }
-
-.btn--white {
-  background-color: #ffffff;
-  color: #d38900;
-  font-weight: 500; }
-
-.btn--animated {
-  animation: moveInBottom 1.4s ease-in-out; }
