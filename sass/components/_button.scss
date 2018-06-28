@@ -10,12 +10,11 @@
     }
 
     &:hover {
-        transform: translateY(-.3rem);
         box-shadow: 0 1rem 2rem rgba($color-black, .1);
+        background-color: $color-lightgrey;
     }
 
     &:active {
-        transform: translateY(-.1rem);
         box-shadow: 0 .5rem 1rem rgba($color-black, .1);
     }
     
