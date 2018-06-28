@@ -145,6 +145,14 @@ body {
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.9); }
 
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 2px;
+  box-shadow: 0 1.5rem 4rem rgba(33, 33, 33, 0.15); }
+
 .header {
   height: 100vh;
   background-image: linear-gradient(30deg, rgba(255, 86, 86, 0.8), rgba(255, 218, 52, 0.8)), url(../img/hero.jpg);
@@ -195,3 +203,8 @@ body {
   background-color: #f7f7f7;
   padding: 25rem 0;
   margin-top: -25vh; }
+
+.section-features {
+  padding: 20rem 0;
+  background-image: linear-gradient(30deg, rgba(255, 86, 86, 0.8), rgba(255, 218, 52, 0.8)), url(../img/hero.jpg);
+  background-size: cover; }
