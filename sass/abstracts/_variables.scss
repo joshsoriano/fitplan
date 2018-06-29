@@ -6,9 +6,10 @@ $color-black: #222222;
 $color-white: #ffffff;
 $color-lightgrey: #f7f7f7;
 $color-grey: #d3d3d3;
-$color-gradient: linear-gradient(to right, #ff5656, #d38900);
+$color-gradient: linear-gradient(to bottom right, #ff5656, #d38900);
+$color-other-gradient: linear-gradient(to bottom right, #ff5656, #ffda34);
 
 // Grid
 $grid-width: 114rem;
 $gutter-vertical: 8rem;
-$gutter-horizontal: 10rem;
+$gutter-horizontal: 5rem;

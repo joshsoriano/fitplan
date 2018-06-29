@@ -62,7 +62,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  color: #d3d3d3; }
+  color: #222222; }
 
 .heading-tertiary {
   font-size: 1.8rem;
@@ -109,7 +109,7 @@ body {
   font-weight: 500; }
 
 .btn--gradient {
-  background: linear-gradient(to right, #ff5656, #d38900);
+  background: linear-gradient(to bottom right, #ff5656, #d38900);
   color: #ffffff;
   font-weight: 500; }
 
@@ -136,7 +136,7 @@ body {
       top: 18rem; }
     .composition__photo:hover {
       border: 1.25rem solid transparent;
-      border-image: linear-gradient(to right, #ff5656, #d38900);
+      border-image: linear-gradient(to bottom right, #ff5656, #d38900);
       border-image-slice: 1;
       transform: scale(1.05) translateY(-0.5rem);
       box-shadow: 0 2.5rem 4rem rgba(34, 34, 34, 0.5);
@@ -155,7 +155,7 @@ body {
   transition: all ease-in-out .3s; }
   .feature-box__icon {
     font-size: 6rem;
-    background-image: linear-gradient(to right, #ff5656, #d38900);
+    background-image: linear-gradient(to bottom right, #ff5656, #d38900);
     -webkit-background-clip: text;
     color: transparent; }
   .feature-box:hover {
@@ -164,6 +164,32 @@ body {
   .feature-box__text {
     font-family: "Lato", sans-serif;
     font-weight: 300; }
+
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 50rem; }
+  .card__side {
+    height: 50rem;
+    transition: all ease .8s;
+    font-size: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(34, 34, 34, 0.15); }
+    .card__side--front {
+      background-color: #ffffff; }
+    .card__side--back {
+      transform: rotateY(180deg);
+      background-image: linear-gradient(to bottom right, #ff5656, #ffda34); }
+  .card:hover .card__side--front {
+    transform: rotateY(-180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0); }
 
 .header {
   height: 100vh;
@@ -197,19 +223,19 @@ body {
   .row [class^="col-"] {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
-      margin-right: 10rem; }
+      margin-right: 5rem; }
   .row .col-1-of-2 {
-    width: calc((100% - 10rem) / 2); }
+    width: calc((100% - 5rem) / 2); }
   .row .col-1-of-3 {
-    width: calc((100% - 2 * 10rem) / 3); }
+    width: calc((100% - 2 * 5rem) / 3); }
   .row .col-2-of-3 {
-    width: calc(2 * ((100% - 2 * 10rem) / 3) + 10rem); }
+    width: calc(2 * ((100% - 2 * 5rem) / 3) + 5rem); }
   .row .col-1-of-4 {
-    width: calc((100% - 3 * 10rem) / 4); }
+    width: calc((100% - 3 * 5rem) / 4); }
   .row .col-2-of-4 {
-    width: calc(2 * ((100% - 3 * 10rem) / 4) + 10rem); }
+    width: calc(2 * ((100% - 3 * 5rem) / 4) + 5rem); }
   .row .col-3-of-4 {
-    width: calc(3 * ((100% - 3 * 10rem) / 4) + (2 * 10rem)); }
+    width: calc(3 * ((100% - 3 * 5rem) / 4) + (2 * 5rem)); }
 
 .section-about {
   background-color: #f7f7f7;
@@ -224,3 +250,8 @@ body {
   transform: skewY(-7deg); }
   .section-features > * {
     transform: skewY(7deg); }
+
+.section-pricing {
+  background-color: #f7f7f7;
+  padding: 25rem 0 50rem 0;
+  margin-top: -10rem; }
