@@ -5,11 +5,17 @@
 }
 
 .section-features {
+    margin-top: -10rem;
     padding: 20rem 0;
     background-image: linear-gradient(
         30deg, 
         rgba($color-primary, 0.8), 
         rgba($color-tertiary, 0.8)),
-        url(../img/hero.jpg);
-        background-size: cover;
+        url(../../img/sledpush.jpg);
+    background-size: cover;
+    transform: skewY(-7deg);
+
+    & > * {
+        transform: skewY(7deg);
+    }
 }
