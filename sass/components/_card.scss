@@ -66,8 +66,21 @@
         color: $color-white;
         text-align: center;
         position: absolute;
+    }
+
+    &__heading--1 {
         top: 19rem;
         left: 10.75rem;
+    }
+    
+    &__heading--2 {
+        top: 19rem;
+        left: 12rem;
+    }
+
+    &__heading--3 {
+        top: 19rem;
+        left: 8.5rem;
     }
 
     &__heading-span {
@@ -98,6 +111,32 @@
 
             }
         }
+    }
+
+    &__cta {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    &__price-box {
+        text-align: center;
+        color: $color-white;
+        margin-bottom: 8rem;
+
+    }
+
+    &__price-only {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+
+    }
+
+    &__price-value {
+        font-size: 6rem;
+        font-weight: 100;
     }
 }
 
