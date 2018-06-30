@@ -46,16 +46,18 @@
 
         &--1 {
             background-image: $color-gradient,
-            url(../../img/nat-5.jpg);
+            url(../../img/basic.jpg);
         }
 
                 
         &--2 {
-            background-image: url(../../img/nat-5.jpg);
+            background-image: $color-gradient,
+            url(../../img/pro.jpg);
         }
  
         &--3 {
-            background-image: url(../../img/nat-5.jpg);
+            background-image: $color-gradient,
+            url(../../img/premium.jpg);
         }
     }
 
@@ -80,7 +82,7 @@
 
     &__heading--3 {
         top: 19rem;
-        left: 8.5rem;
+        left: 8rem;
     }
 
     &__heading-span {
@@ -131,11 +133,12 @@
     &__price-only {
         font-size: 1.4rem;
         text-transform: uppercase;
+        margin-bottom: 2rem;
 
     }
 
     &__price-value {
-        font-size: 6rem;
+        font-size: 4rem;
         font-weight: 100;
     }
 }
