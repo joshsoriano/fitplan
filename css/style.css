@@ -254,6 +254,29 @@ body {
     font-size: 4rem;
     font-weight: 100; }
 
+.testimonial {
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba(34, 34, 34, 0.1);
+  background-color: #ffffff;
+  border-radius: 3px;
+  padding: 6rem;
+  padding-left: 9rem;
+  transform: skewX(-12deg); }
+  .testimonial_shape {
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: translateX(-3rem) skewX(12deg); }
+  .testimonial_image {
+    height: 100%; }
+  .testimonial_text {
+    transform: skewX(12deg); }
+
 .header {
   height: 100vh;
   background-image: linear-gradient(to bottom right, rgba(255, 86, 86, 0.8), rgba(255, 218, 52, 0.8)), url(../img/hero.jpg);
@@ -317,5 +340,9 @@ body {
 
 .section-pricing {
   background-color: #f7f7f7;
-  padding: 25rem 0 50rem 0;
+  padding: 25rem 0;
   margin-top: -10rem; }
+
+.section-testimonials {
+  padding: 25rem 0;
+  background-color: #f7f7f7; }
