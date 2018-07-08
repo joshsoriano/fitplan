@@ -291,6 +291,43 @@ body {
     width: 100%;
     object-fit: cover; }
 
+.form__input {
+  font-size: 1.5rem;
+  padding: 1.5rem 2rem;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  font-family: "Lato", sans-serif;
+  border-bottom: 3px solid transparent;
+  width: 100%;
+  display: block;
+  transition: all .3s; }
+  .form__input:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(34, 34, 34, 0.1);
+    border: 3px solid #37c260;
+    transition: all .3s; }
+    .form__input:focus:invalid {
+      border-color: #ff5656; }
+  .form__input::-webkit-input-placeholder {
+    color: #d3d3d3; }
+
+.form__label {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-left: 2rem;
+  margin-top: .6rem;
+  display: block;
+  transition: all .3s; }
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-2rem); }
+
+.form__group:not(:last-child) {
+  margin-bottom: .5rem; }
+
 .header {
   height: 100vh;
   background-image: linear-gradient(to bottom right, rgba(255, 86, 86, 0.8), rgba(255, 218, 52, 0.8)), url(../img/hero.jpg);
@@ -373,5 +410,5 @@ body {
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(34, 34, 34, 0.25); }
   .consult__form {
-    width: 50%;
+    width: 35%;
     padding: 6rem; }

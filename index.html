@@ -222,10 +222,22 @@
             <section class="section-consultation">
                 <div class="row">
                     <div class="consult">
-                        <div class="consult_form">
+                        <div class="consult__form">
                             <form action="#" class="form">
-                                <div class="form_group">
-                                    <input type="text" class="form_input" placeholder="Name" required>
+                                <div class="u-margin-bottom-sm">
+                                    <h2 class="heading-secondary">Start your fitplan!</h2>
+                                </div>
+                                <div class="form__group">
+                                    <input type="text" class="form__input" id="name"placeholder="Full Name" autocomplete="off" required>
+                                    <label for="name" class="form__label">Full Name</label>
+                                </div>
+                                <div class="form__group">
+                                    <input type="number" class="form__input" id="number" placeholder="Phone Number" autocomplete="off"  required>
+                                    <label for="number" class="form__label">Phone Number</label>
+                                </div>
+                                <div class="form__group">
+                                    <input type="email" class="form__input" id="email" placeholder="Email Address" autocomplete="off"  required>
+                                    <label for="email" class="form__label">Email Address</label>
                                 </div>
                             </form>
                         </div>
