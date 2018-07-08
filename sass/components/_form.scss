@@ -18,7 +18,9 @@
             transition: all .3s;
 
             &:invalid {
-                border-color: $color-primary;
+                border: 3px solid transparent;
+                border-image: $color-gradient;
+                border-image-slice: 1;
             }
         }
 
